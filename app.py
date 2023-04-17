@@ -16,8 +16,8 @@ def toplama():
         sayi2 = request.form['sayi2']
         sonuc = float(sayi1) + float(sayi2)
 
-        return render_template('toplama.html', sonuc = sonuc)
-    return render_template('toplama.html')
+        return render_template('index.html', sonuc = sonuc)
+    return render_template('index.html')
 
 
 @app.route('/usalma', methods= ['GET', 'POST'])
